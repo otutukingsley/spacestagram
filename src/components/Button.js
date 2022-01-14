@@ -24,7 +24,7 @@ const Button = ({ post }) => {
         className={`like-btn ${liked ? 'like' : 'unliked'}`}
         onClick={handleLike}
       >
-        {liked ? 'Liked' : 'Like'}
+        {liked ? 'Liked!' : 'Like'}
       </button>
     </>
   )
