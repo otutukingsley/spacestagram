@@ -12,7 +12,7 @@ export const getNasaImages = () => async (dispatch) => {
     })
 
     const { data } = await axios.get(
-      'https://api.nasa.gov/planetary/apod?api_key=dj2NhzFcl7xLcaQB5sYxW751QVOqd8aUC5Z17XKQ&count=5',
+      `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}&count=5`,
     )
 
     dispatch({
