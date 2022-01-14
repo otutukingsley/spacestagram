@@ -1,27 +1,31 @@
 import React from 'react'
 
-const Button = ({ post, id }) => {
+const Button = ({ post }) => {
   const [liked, setLiked] = React.useState(false)
-  const [wasLiked, setWasLiked] = React.useState('')
+  // const [wasLiked, setWasLiked] = React.useState()
 
   React.useEffect(() => {
-    const isLiked = window.localStorage.getItem(`like+${id}`)
-    setWasLiked(isLiked)
-  }, [id, liked])
+    const isLiked = window.localStorage.getItem(`${post.url}`)
+    if (isLiked === null || isLiked === 'false') {
+      setLiked(false)
+    } else {
+      setLiked(true)
+    }
+  }, [liked, post.url])
 
   const handleLike = (e) => {
     e.preventDefault()
     setLiked((like) => !like)
-    window.localStorage.setItem(`like+${id}`, liked)
+    window.localStorage.setItem(`${post.url}`, !liked)
   }
 
   return (
     <>
       <button
-        className={`like-btn ${wasLiked === 'true' ? 'like' : 'unliked'}`}
+        className={`like-btn ${liked ? 'like' : 'unliked'}`}
         onClick={handleLike}
       >
-        {wasLiked === 'true' ? 'Liked' : 'Like'}
+        {liked ? 'Liked' : 'Like'}
       </button>
     </>
   )
