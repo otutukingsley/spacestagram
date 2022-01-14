@@ -7,7 +7,7 @@ const Post = ({ post, id}) => {
   return (
     <Card>
       <CardImageCont>
-        <img src={post.url} alt="i" className="post-img" loading="lazy" />
+        <img src={post.url} alt={post.title} className="post-img" loading="lazy" />
       </CardImageCont>
       <h4 className="post-title">
         {post.title} - <Moment format="MMMM Do YYYY">{post.date}</Moment>
