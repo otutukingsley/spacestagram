@@ -2,7 +2,6 @@ import React from 'react'
 
 const Button = ({ post }) => {
   const [liked, setLiked] = React.useState(false)
-  // const [wasLiked, setWasLiked] = React.useState()
 
   React.useEffect(() => {
     const isLiked = window.localStorage.getItem(`${post.url}`)

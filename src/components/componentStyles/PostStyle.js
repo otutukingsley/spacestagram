@@ -6,6 +6,10 @@ border: #ccc 1px dotted;
 margin: 1.3rem 0;
 width: 30rem;
 
+@media(max-width: 700px){
+ width: 100%;
+}
+
 .post-title{
  margin-top: 1.3rem;
 }

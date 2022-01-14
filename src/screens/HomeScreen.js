@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getNasaImages } from '../actions/postActions'
 import Post from '../components/Post'
 import { SpaceSection } from './screenStyles/HomeScreenStyles'
+import Loader from '../components/Loader'
+import Message from '../components/Message'
 
 const HomeScreen = () => {
   const dispatch = useDispatch()
@@ -16,9 +18,13 @@ const HomeScreen = () => {
   return (
     <SpaceSection>
       {loading ? (
-        <h1>Loading...</h1>
+        <Loader />
+      ) : !loading && error ? (
+        <Message message={error} />
       ) : (
-        images.map((image, index) => <Post post={image} key={image.url} id={index} />)
+        images.map((image, index) => (
+          <Post post={image} key={image.url} id={index} />
+        ))
       )}
     </SpaceSection>
   )
