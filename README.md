@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Getting Started with the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Here is the live link of the project hosted on Netlify [Spacestagram](https://serene-leavitt-fbb7ea.netlify.app/).
 
-## Available Scripts
+## Shopify Frontend developer Intern Challenge - Summer 2022
+This is a project done in accordance to the shopify frontend developer internship challenge for summer 2022
 
-In the project directory, you can run:
+### Challenge
+We need a webpage that can pull images, and allow the user to “like” and “unlike” their favourite images.
 
-### `npm start`
+#### Challenge MUST DO's
+- Fetch data from one of NASA’s APIs and display the resulting images
+- Display descriptive data for each image (for example: title, date, description, etc.)
+- Like an image
+- Unlike an image
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technical Requirements of Challenge
+- Search results should come from NASA’s free APIs
+- Each image result should list at least a title, date of capture (ideally in earth_date) and a button to “like” that image.
+- Each image can be “liked”, and a user should be able to undo their “like”
+- The HTML that ends up being served client-side should be accessible and semantic
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Extra TODO's (optional) - One or More Recommended
+- Save likes if the user leaves or reloads the page
+- Animate the “like” action (might we suggest a heart?)
+- Add a loading state while we wait for NASA’s API to return data
+- Create shareable links for each image
+- Add a date-picker to be able to browse photos starting from a specific date
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Extra TODO's Done
+- Save likes if the user leaves or reloads the page
+- Add a loading state while we wait for NASA’s API to return data
 
-### `npm run build`
+## Images showing the Liked state, the not liked state, and the loading state
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1680" alt="Screenshot 2022-01-14 at 14 32 28" src="https://user-images.githubusercontent.com/56305995/149525612-3cc81e30-2de1-49fd-b155-c732f4c7f0d9.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="1680" alt="Screenshot 2022-01-14 at 14 30 30" src="https://user-images.githubusercontent.com/56305995/149525734-2e49a3dc-f5e8-4cd5-90a6-44d39f9752e2.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1680" alt="Screenshot 2022-01-14 at 14 30 34" src="https://user-images.githubusercontent.com/56305995/149525069-369ba279-497b-40c0-b655-92028b5f202a.png">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Done and Completed by Otutu Chinedu Kingsley
