@@ -6,7 +6,7 @@ const Navbar = () => {
     <Nav>
       <div className="wrapper">
         <h1 className="nav-heading">Spacestagram</h1>
-        <p className="nav-text">brought to you by NASA's image API</p>
+        <h5 className="nav-text">brought to you by NASA's image API</h5>
       </div>
     </Nav>
   )

@@ -22,9 +22,7 @@ const HomeScreen = () => {
       ) : !loading && error ? (
         <Message message={error} />
       ) : (
-        images.map((image, index) => (
-          <Post post={image} key={image.url} id={index} />
-        ))
+        images.map((image) => <Post post={image} key={image.url} />)
       )}
     </SpaceSection>
   )

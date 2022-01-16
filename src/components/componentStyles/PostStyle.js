@@ -12,11 +12,12 @@ width: 30rem;
 
 .post-title{
  margin-top: 1.3rem;
+ margin-bottom: 0.5rem;
 }
 .post-text{
  margin-top: 1.3rem;
  text-align: left;
- line-height: 25px;
+ line-height: 24px;
 }
 `
 

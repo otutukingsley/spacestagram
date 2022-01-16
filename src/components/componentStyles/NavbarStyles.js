@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Nav = styled.nav`
+export const Nav = styled.header`
 position: sticky;
 top: 0;
 left: 0;
