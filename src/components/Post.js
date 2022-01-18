@@ -15,7 +15,7 @@ const Post = ({ post }) => {
         />
       </CardImageCont>
       <article className="post-article">
-        <h4 className="post-title">{post.title}</h4>
+        <h3 className="post-title">{post.title}</h3>
         <Moment format="MM/DD/yyyy">{post.date}</Moment>
         <p className="post-text">{post.explanation}</p>
         <Button post={post} />
